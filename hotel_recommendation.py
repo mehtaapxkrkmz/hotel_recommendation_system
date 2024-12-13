@@ -43,7 +43,7 @@ selected_year = st.selectbox('Choose a year', df['Review_Year'].unique())
 # Seçilen yıl için ayları filtreleyelim
 selected_month = st.selectbox('Choose a month', df[df['Review_Year'] == selected_year]['Review_Month_Name'].unique())
 
-# Kullanıcıdan puan seçimini alalım (1-10 arasında)
+# Kullanıcıdan puan seçimini alalım.
 min_score = st.slider('Minimum Score', 1, 10, 1)
 max_score = st.slider('Maximum Score', 1, 10, 10)
 
